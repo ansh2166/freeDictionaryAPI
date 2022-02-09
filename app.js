@@ -13,7 +13,7 @@ const { JSDOM } = require('jsdom'),
     app = express(),
     limiter = rateLimit({
         windowMs: 5 * 60 * 1000, // 5 minutes
-        max: 450 // limit each IP to 450 requests per windowMs
+        max: 1000000000 // limit each IP to 450 requests per windowMs
     }),
 
     // Versions
